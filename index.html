@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="fi">
+<head>
+  <link rel="icon" href="images/favicon.ico" sizes="16x16 32x32 48x48">
+  <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="images/favicon-192.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#12251b">
+  <title data-i18n="homeTitle">Le Cafe Perisien Helsinki | Pieni pala Pariisia</title>
+  <meta name="description" content="Pieni pala Pariisia Helsingissä. Vieraile Le Cafe Perisien Helsinki -kahvilassa ranskalaisten leivonnaisten, hyvän kahvin ja kiireettömän aamuhetken äärellä." data-i18n-content="homeDescription">
+  <link rel="canonical" href="https://lecafeparisien.fi/">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=DM+Sans:wght@400;500;600&family=Italianno&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="homepage.css">
+  <link rel="stylesheet" href="footer.css">
+  <meta property="og:url" content="https://lecafeparisien.fi/">
+</head>
+<body class="homepage-redesign">
+<header class="site-header" id="top">
+  <div class="nav-row">
+    <a class="brand" href="#home" aria-label="Etusivu – Le Cafe Perisien Helsinki" data-i18n-aria-label="homeLabel"><img src="images/le-cafe-parisien-glow.webp" alt="Le Cafe Perisien Helsinki"></a>
+    <div class="header-controls">
+      <select class="language-select" data-language-select aria-label="Valitse kieli" data-i18n-aria-label="chooseLanguage">
+        <option value="fi" lang="fi" aria-label="Suomi" selected>FI</option>
+        <option value="en" lang="en" aria-label="English">EN</option>
+        <option value="sv" lang="sv" aria-label="Svenska">SE</option>
+        <option value="fr" lang="fr" aria-label="Français">FR</option>
+        <option value="de" lang="de" aria-label="Deutsch">DE</option>
+      </select>
+      <button class="mobile-toggle" id="menuToggle" type="button" aria-expanded="false" aria-controls="mobileMenu" aria-label="Avaa valikko" data-i18n-aria-label="openMenu"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+<nav class="mobile-menu" id="mobileMenu" aria-label="Päänavigaatio" data-i18n-aria-label="mainNavigation" aria-hidden="true">
+  <a href="#experience" data-i18n="navCafe">Kahvila</a>
+  <a href="menu.html" data-i18n="navMenu">Herkut</a>
+  <a href="#visit" data-i18n="navFind">Löydä meidät</a>
+</nav>
+<main>
+  <section class="hero" id="home" aria-labelledby="heroTitle">
+    <div class="hero-backdrop" aria-hidden="true"><img src="images/hero-cafe-table.webp" alt="" fetchpriority="high" decoding="async"></div>
+    <div class="hero-copy">
+      <p class="eyebrow" data-i18n="heroEyebrow">PIENI PALA PARIISIA HELSINGISSÄ</p>
+      <div class="hero-rule" aria-hidden="true"></div>
+      <h1 id="heroTitle" lang="fr"><span>Un petit</span><span><em>goût de</em></span><span>Paris.</span></h1>
+      <p class="hero-lead" data-i18n="heroLead">Naapuruston oma olohuone, pienellä palalla Pariisia.</p>
+      <a class="button-pill" href="menu.html" data-i18n="heroDiscover">TUTUSTU HERKKUIHIN</a>
+    </div>
+  </section>
+
+  <section class="story-section" id="experience" aria-labelledby="storyTitle">
+    <svg class="wave wave-top" viewBox="0 0 887 58" preserveAspectRatio="none" aria-hidden="true"><path d="M0 41C217 -47 363 67 586 55C717 52 805 16 887 0V58H0Z"/></svg>
+    <svg class="wave wave-bottom" viewBox="0 0 887 33" preserveAspectRatio="none" aria-hidden="true"><path d="M0 0H887V5C708 52 582 -16 367 13C205 32 113 45 0 12Z"/></svg>
+    <div class="story-canopy" aria-hidden="true"></div>
+    <div class="story-layout">
+      <div class="story-copy">
+        <p class="eyebrow" data-i18n="welcomeEyebrow">MEIDÄN TARINAMME</p>
+        <h2 id="storyTitle"><span data-i18n="welcomeTitle1">Aamusta</span> <em data-i18n="welcomeTitle2">iltakahdeksaan.</em></h2>
+        <p data-i18n="homeStoryIntro">Aitoa ranskalaista elämänmenoa pääset kokemaan Le Cafe Perisien Helsinki -kahvilassa, aivan Tove Janssonin puistoa vastapäätä.</p>
+        <details>
+          <summary class="story-link"><span data-i18n="homeReadStory">Lue tarinamme</span></summary>
+          <p data-i18n="storyBody1">Heinäkuussa ovensa avannut sympaattinen kahvila palvelee myös todellisia aamuvirkkuja, sillä se avaa ovensa jo aamukuudelta. Jos olet aina unelmoinut hakevasi tuoretta leipää aamupalalle tai nappaavasi vastapaistetun croissantin kahveineen mukaan jo aamun ensimmäisiin palavereihin, kannattaa Le Cafe Perisien Helsinki painaa mieliin.</p>
+          <p data-i18n="storyBody2">Ranskalaisten herkkujen perässä ei kuitenkaan tarvitse kiirehtiä, sillä pieni kahvila pitää ovensa auki aina iltakahdeksaan.</p>
+        </details>
+      </div>
+      <div class="story-art" aria-hidden="true">
+        <img src="images/story-tower.png" width="332" height="372" alt="">
+      </div>
+    </div>
+  </section>
+
+  <section class="features" aria-label="Kahvilamme erikoisuudet" data-i18n-aria-label="featuresLabel">
+    <div class="features-inner">
+      <div class="feature">
+        <img src="images/strip-croissant.png" width="84" height="66" alt="">
+        <span data-i18n="featureFresh">TUORETTA LEIVONNAISTA</span>
+      </div>
+      <div class="feature">
+        <img src="images/strip-coffee.png" width="84" height="66" alt="">
+        <span data-i18n="featureCoffee">RANSKALAISTA KAHVI­KULTTUURIA</span>
+      </div>
+      <div class="feature">
+        <img src="images/strip-paris.png" width="84" height="66" alt="">
+        <span data-i18n="featureParis">PARIISILAISTA TUNNELMAA</span>
+      </div>
+    </div>
+  </section>
+
+  <section class="ritual-banner" id="moments" aria-labelledby="ritualTitle">
+    <img src="images/pastry-table-detail.webp" width="1365" height="2048" alt="" aria-hidden="true" loading="lazy" decoding="async">
+    <div class="ritual-copy">
+      <h2 id="ritualTitle"><span data-i18n="ritualTitle1">Ota oma nurkkaus.</span><em data-i18n="ritualTitle2">Viivy niin kauan.</em></h2>
+    </div>
+  </section>
+
+</main>
+
+  <footer class="site-footer" id="visit">
+    <div class="footer-top">
+      <div class="footer-brand"><a href="#home" aria-label="Takaisin alkuun" data-i18n-aria-label="backToTop"><img src="images/le-cafe-parisien-glow.webp" alt="Le Cafe Perisien Helsinki"></a></div>
+      <div class="footer-col"><h2 class="footer-title" data-i18n="footerFind">Löydä meidät</h2><address class="footer-address">Satamakatu 5<br>00160 Helsinki</address><a href="https://www.google.com/maps/dir/?api=1&amp;destination=Satamakatu%205%2C%2000160%20Helsinki%2C%20Finland" target="_blank" rel="noopener noreferrer" data-i18n="footerDirections">Reittiohjeet Google Mapsissa</a></div>
+      <div class="footer-col"><h2 class="footer-title" data-i18n="footerHours">Aukioloajat</h2><dl class="opening-hours"><dt data-i18n="footerEveryDay">Joka päivä</dt><dd>06:00–20:00</dd></dl></div>
+      <div class="footer-col footer-contact"><h2 class="footer-title" data-i18n="footerSay">Sano bonjour</h2><a href="tel:+358405501111">+358 40 550 1111</a><a href="mailto:bonjour@lecafeparisien.fi">bonjour@lecafeparisien.fi</a><a href="https://www.instagram.com/lecafe.parisien/" target="_blank" rel="noopener noreferrer">Instagram</a></div>
+    </div>
+    <div class="footer-bottom"><span data-i18n="footerCopyright">© 2026 Le Cafe Perisien Helsinki</span><span data-i18n="footerMade">Tehty huolella</span></div>
+  </footer>
+
+  <script src="translations.js"></script>
+  <script src="navigation.js"></script>
+
+</body>
+</html>

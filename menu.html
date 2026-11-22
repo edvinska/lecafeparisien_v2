@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="fi">
+<head>
+  <link rel="icon" href="images/favicon.ico" sizes="16x16 32x32 48x48">
+  <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="images/favicon-192.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#12251b">
+  <title data-i18n="menuTitle">Herkkuvalikoima | Le Cafe Perisien Helsinki</title>
+  <meta name="description" content="Tutustu Le Cafe Perisien Helsinki -kahvilan ranskalaisiin leivonnaisiin, suolaisiin herkkuihin, vegaanisiin vaihtoehtoihin ja kahvilan suosikkeihin Katajanokalla Helsingissä." data-i18n-content="menuDescription">
+  <link rel="canonical" href="https://lecafeparisien.fi/menu.html">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=DM+Sans:wght@400;500;600&family=Italianno&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="homepage.css">
+  <link rel="stylesheet" href="menu.css">
+  <link rel="stylesheet" href="footer.css">
+  <meta property="og:url" content="https://lecafeparisien.fi/menu.html">
+</head>
+<body>
+<header class="site-header" id="top">
+  <div class="nav-row">
+    <a class="brand" href="index.html#home" aria-label="Etusivu – Le Cafe Perisien Helsinki" data-i18n-aria-label="homeLabel"><img src="images/le-cafe-parisien-glow.webp" alt="Le Cafe Perisien Helsinki"></a>
+    <div class="header-controls">
+      <select class="language-select" data-language-select aria-label="Valitse kieli" data-i18n-aria-label="chooseLanguage">
+        <option value="fi" lang="fi" aria-label="Suomi" selected>FI</option>
+        <option value="en" lang="en" aria-label="English">EN</option>
+        <option value="sv" lang="sv" aria-label="Svenska">SE</option>
+        <option value="fr" lang="fr" aria-label="Français">FR</option>
+        <option value="de" lang="de" aria-label="Deutsch">DE</option>
+      </select>
+      <button class="mobile-toggle" id="menuToggle" type="button" aria-expanded="false" aria-controls="mobileMenu" aria-label="Avaa valikko" data-i18n-aria-label="openMenu"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+<nav class="mobile-menu" id="mobileMenu" aria-label="Päänavigaatio" data-i18n-aria-label="mainNavigation" aria-hidden="true">
+  <a href="index.html#experience" data-i18n="navCafe">Kahvila</a>
+  <a href="menu.html" aria-current="page" data-i18n="navMenu">Herkut</a>
+  <a href="#visit" data-i18n="navFind">Löydä meidät</a>
+</nav>
+  <main>
+    <section class="hero menu-hero" aria-labelledby="menu-title">
+      <div class="hero-backdrop">
+        <img src="images/menu-sweet-and-savoury.webp" width="853" height="1280" alt="Täytettyjä croissantteja, marjatorttuja ja kahvilan suolaisia herkkuja" data-i18n-alt="menuImageAlt" fetchpriority="high">
+      </div>
+      <div class="hero-copy">
+        <p class="eyebrow" data-i18n="menuEyebrow">Makeaa ja suolaista</p>
+        <div class="hero-rule" aria-hidden="true"></div>
+        <h1 id="menu-title"><span data-i18n="menuHeroTitle1">Jotain</span> <em data-i18n="menuHeroTitle2">joka makuun.</em></h1>
+        <p class="hero-lead" data-i18n="menuIntro">Marjaisia torttuja, täytettyjä croissantteja ja muita kahvilan suosikkeja. Valikoimasta löytyy herkku niin makean kuin suolaisen nälkään.</p>
+      </div>
+    </section>
+    <div class="menu-paper">
+      <svg class="wave wave-top" viewBox="0 0 887 58" preserveAspectRatio="none" aria-hidden="true"><path d="M0 41C217 -47 363 67 586 55C717 52 805 16 887 0V58H0Z"/></svg>
+    <nav class="menu-jump" aria-label="Ruokalistan osiot" data-i18n-aria-label="menuCategories"><a href="#sweet" data-i18n="menuSweetLink">Makeat herkut</a><a href="#savory" data-i18n="menuSavoryLink">Suolaiset herkut</a><a href="#drinks" data-i18n="menuDrinksLink">Juomat</a></nav>
+    <section class="menu-section" id="sweet">
+      <div><p class="eyebrow" data-i18n="sweetEyebrow">Pâtisserie</p><h2 class="section-heading"><span data-i18n="sweetTitle1">Makeat</span> <br><em data-i18n="sweetTitle2">herkut.</em></h2><p class="section-intro" data-i18n="sweetIntro">Kultaisia ja herkkiä suosikkeja jokaiseen aamuun. Tutustu päivän valikoimaan kahvilan vitriinissä.</p></div>
+      <div><div class="menu-list">
+        <article class="menu-item"><div class="item-main"><span class="item-name" data-i18n="butterCroissant">Voicroissantti</span><span class="item-description" data-i18n="butterDesc">Lehtevä kuori, rapeat reunat ja pehmeä sisus.</span></div></article>
+        <article class="menu-item"><div class="item-main"><span class="item-name" data-i18n="pistachioCroissant">Pistaasicroissantti</span><span class="item-description" data-i18n="pistachioDesc">Pähkinäinen vivahde ranskalaiseen leipomoklassikkoon.</span></div></article>
+        <article class="menu-item"><div class="item-main"><span class="item-name" data-i18n="almondCroissant">Mantelicroissantti</span><span class="item-description" data-i18n="almondDesc">Hienostunut mantelinen versio aamuherkusta.</span></div></article>
+        <article class="menu-item"><div class="item-main"><span class="item-name" data-i18n="painChocolat">Pain au chocolat</span><span class="item-description" data-i18n="painDesc">Voitaikinainen leivonnainen ja suklaasydän.</span></div></article>
+        <article class="menu-item"><div class="item-main"><span class="item-name" data-i18n="chocolateEclair">Suklaaéclair</span><span class="item-description" data-i18n="eclairDesc">Ranskalaisen pâtisserien klassikkoherkku.</span></div></article>
+        <article class="menu-item"><div class="item-main"><span class="item-name" data-i18n="macarons">Macaronit</span><span class="item-description" data-i18n="macaronsDesc">Pieniä värikkäitä suupaloja leivonnaistiskiltä.</span></div></article>
+        <article class="menu-item"><div class="item-main"><span class="item-name" data-i18n="millefeuille">Mille-feuille</span><span class="item-description" data-i18n="milleDesc">Hento, kerroksellinen ranskalainen leivonnainen.</span></div></article>
+        <article class="menu-item"><div class="item-main"><span class="item-name" data-i18n="veganCroissant">Vegaaninen croissantti</span><span class="item-description" data-i18n="veganCroissantDesc">Kasvipohjainen leivonnainen.</span></div><span class="item-tag" data-i18n="veganTag">Vegaaninen</span></article>
+        <article class="menu-item"><div class="item-main"><span class="item-name" data-i18n="veganMacarons">Vegaaniset macaronit</span><span class="item-description" data-i18n="veganMacaronsDesc">Kasvipohjaisia macaroneja päivän valikoiman mukaan.</span></div><span class="item-tag" data-i18n="veganTag">Vegaaninen</span></article>
+      </div><p class="dietary-note" data-i18n="veganNote">Etsitkö kasvipohjaista vaihtoehtoa? Kysy päivän vegaanisista croissanteista ja macaroneista.</p></div>
+    </section>
+    <section class="menu-section" id="savory">
+      <div><p class="eyebrow" data-i18n="savoryEyebrow">Le déjeuner</p><h2 class="section-heading"><span data-i18n="savoryTitle1">Suolaiset</span> <br><em data-i18n="savoryTitle2">herkut.</em></h2><p class="section-intro" data-i18n="savoryIntro">Kahvihetkestä voi tehdä hieman ruokaisamman. Kysy päivän suolaisista vaihtoehdoista tiskiltä.</p></div>
+      <div class="menu-list">
+        <article class="menu-item"><div class="item-main"><span class="item-name" data-i18n="frenchSandwich">Ranskalaiset voileivät</span><span class="item-description" data-i18n="sandwichDesc">Tuoreita voileipiä nopealle lounaalle tai kiireettömään taukoon.</span></div></article>
+        <article class="menu-item"><div class="item-main"><span class="item-name" data-i18n="chickenSandwich">Kanavoileivät</span><span class="item-description" data-i18n="chickenDesc">Täyttävä kahvilasuosikki, tuoreena tarjolla.</span></div></article>
+        <article class="menu-item"><div class="item-main"><span class="item-name" data-i18n="savoryEclair">Suolaiset éclairit</span><span class="item-description" data-i18n="savoryEclairDesc">Suolainen tulkinta ranskalaisesta leivonnaisklassikosta.</span></div></article>
+      </div>
+    </section>
+    <section class="menu-section drink-section" id="drinks">
+      <div><p class="eyebrow" data-i18n="drinksEyebrow">Juotavaa</p><h2 class="section-heading"><span data-i18n="drinksTitle1">Jotain</span> <br><em data-i18n="drinksTitle2">siemailtavaa.</em></h2><p class="section-intro" data-i18n="drinksIntro">Creman kruunaama espresso, maitoinen cappuccino tai lämmittävä kaakao. Istu alas ja viivy hetki.</p></div>
+      <div class="menu-list">
+        <article class="menu-item"><div class="item-main"><span class="item-name" data-i18n="espresso">Perinteinen espresso</span><span class="item-description" data-i18n="espressoDesc">Pieni ja klassinen kahvi.</span></div></article>
+        <article class="menu-item"><div class="item-main"><span class="item-name" data-i18n="cappuccino">Cappuccino</span><span class="item-description" data-i18n="cappuccinoDesc">Espressoa ja pehmeää maitovaahtoa.</span></div></article>
+        <article class="menu-item"><div class="item-main"><span class="item-name" data-i18n="hotChocolate">Kaakao</span><span class="item-description" data-i18n="hotChocolateDesc">Lämmin ja lempeä kahvilaherkku.</span></div></article>
+        <article class="menu-item"><div class="item-main"><span class="item-name" data-i18n="frenchDrinks">Ranskalaiset virvoitusjuomat</span><span class="item-description" data-i18n="frenchDrinksDesc">Kysy tiskiltä päivän viileistä juomista.</span></div></article>
+      </div>
+    </section>
+    </div>
+  </main>
+  <footer class="site-footer" id="visit">
+    <div class="footer-top">
+      <div class="footer-brand"><a href="#top" aria-label="Takaisin alkuun" data-i18n-aria-label="backToTop"><img src="images/le-cafe-parisien-glow.webp" alt="Le Cafe Perisien Helsinki"></a></div>
+      <div class="footer-col"><h2 class="footer-title" data-i18n="footerFind">Löydä meidät</h2><address class="footer-address">Satamakatu 5<br>00160 Helsinki</address><a href="https://www.google.com/maps/dir/?api=1&amp;destination=Satamakatu%205%2C%2000160%20Helsinki%2C%20Finland" target="_blank" rel="noopener noreferrer" data-i18n="footerDirections">Reittiohjeet Google Mapsissa</a></div>
+      <div class="footer-col"><h2 class="footer-title" data-i18n="footerHours">Aukioloajat</h2><dl class="opening-hours"><dt data-i18n="footerEveryDay">Joka päivä</dt><dd>06:00–20:00</dd></dl></div>
+      <div class="footer-col footer-contact"><h2 class="footer-title" data-i18n="footerSay">Sano bonjour</h2><a href="tel:+358405501111">+358 40 550 1111</a><a href="mailto:bonjour@lecafeparisien.fi">bonjour@lecafeparisien.fi</a><a href="https://www.instagram.com/lecafe.parisien/" target="_blank" rel="noopener noreferrer">Instagram</a></div>
+    </div>
+    <div class="footer-bottom"><span data-i18n="footerCopyright">© 2026 Le Cafe Perisien Helsinki</span><span data-i18n="footerMade">Tehty huolella</span></div>
+  </footer>
+  <script src="translations.js"></script>
+  <script src="navigation.js"></script>
+</body>
+</html>

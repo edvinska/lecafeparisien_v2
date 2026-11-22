@@ -1,0 +1,98 @@
+.menu-hero {
+  min-height: clamp(360px, 47vw, 590px);
+  padding-block: clamp(42px, 5vw, 78px) clamp(66px, 8vw, 108px);
+}
+.menu-hero .hero-backdrop img {
+  width: 72%;
+  object-position: 50% 51%;
+}
+.menu-hero::before {
+  background: linear-gradient(90deg, #0a2519 22%, rgba(10,37,25,.92) 37%, rgba(10,37,25,.46) 56%, transparent 78%);
+}
+.menu-hero .hero-copy { width: min(100%, 40rem); }
+.menu-hero h1 { font-size: clamp(54px, 7.8vw, 100px); line-height: .98; }
+.menu-hero .hero-lead {
+  max-width: 27ch;
+  margin-bottom: 0;
+  font-size: clamp(20px, 2.35vw, 29px);
+  line-height: 1.27;
+}
+.menu-paper {
+  --wave-height: clamp(22px, 4vw, 55px);
+  position: relative;
+  background: var(--cream);
+  color: var(--ink);
+  padding-inline: var(--gutter);
+}
+.menu-jump {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 4px clamp(14px, 3.5vw, 48px);
+  padding-block: 4px 16px;
+  border-bottom: 1px solid #bfaa80;
+}
+.menu-jump a {
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
+  font-size: clamp(13px, 1.5vw, 17px);
+  font-weight: 600;
+  text-underline-offset: 5px;
+}
+.menu-jump a:hover, .menu-jump a:focus-visible { text-decoration: underline; }
+.menu-section {
+  display: grid;
+  grid-template-columns: minmax(0, .72fr) minmax(0, 1.65fr);
+  gap: clamp(24px, 6vw, 88px);
+  align-items: start;
+  padding-block: clamp(36px, 6vw, 84px);
+  border-bottom: 1px solid #cabb9e;
+  scroll-margin-top: 16px;
+}
+.menu-section:last-child { border-bottom: 0; }
+.menu-section .eyebrow { color: #816028; font-size: 12px; }
+.section-heading {
+  margin: 10px 0 14px;
+  font: 500 clamp(40px, 5vw, 72px)/1 var(--serif);
+  letter-spacing: -.045em;
+  overflow-wrap: break-word;
+}
+.section-heading em { color: #896b32; font-weight: 400; }
+.section-intro, .item-description, .dietary-note { color: #475749; }
+.section-intro { font-size: 16px; max-width: 36ch; line-height: 1.55; }
+.menu-list { display: grid; align-content: start; }
+#sweet .menu-list { grid-template-columns: repeat(2, minmax(0, 1fr)); column-gap: clamp(18px, 3vw, 42px); }
+.menu-item {
+  border-top: 1px solid #cabb9e;
+  padding-block: 14px 18px;
+  min-width: 0;
+}
+.item-name {
+  display: block;
+  font: 600 clamp(24px, 2.25vw, 31px)/1.12 var(--serif);
+  overflow-wrap: break-word;
+}
+.item-description { display: block; margin-top: 5px; font-size: 15px; line-height: 1.5; }
+.item-tag {
+  display: inline-block;
+  margin-top: 7px;
+  padding: 2px 9px;
+  border: 1px solid #9aa48b;
+  border-radius: 2em;
+  color: #314d33;
+  font-size: 12px;
+}
+.dietary-note { margin-top: 10px; padding-inline-start: 14px; border-left: 2px solid #ad8c4e; font-size: 14px; }
+@media (max-width: 820px) {
+  .menu-section { grid-template-columns: 1fr; }
+  .section-heading br { display: none; }
+  .section-intro { max-width: 55ch; }
+}
+@media (max-width: 560px) {
+  .menu-hero { min-height: 340px; padding-block: 34px 56px; }
+  .menu-hero .hero-backdrop img { width: 100%; object-position: 68% 50%; }
+  .menu-hero::before { background: linear-gradient(90deg, rgba(8,33,21,.96), rgba(8,33,21,.84) 45%, rgba(8,33,21,.22)); }
+  .menu-hero .hero-lead { max-width: 23ch; }
+  #sweet .menu-list { grid-template-columns: 1fr; }
+}
